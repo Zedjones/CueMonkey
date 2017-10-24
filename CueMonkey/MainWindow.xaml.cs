@@ -24,5 +24,6 @@ namespace CueMonkey
         {
             InitializeComponent();
         }
+ 
     }
 }

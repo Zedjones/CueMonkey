@@ -1,0 +1,16 @@
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\CueMonkeyTests.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\CueMonkeyTests.pdb
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\CueMonkey.exe
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\CueMonkey.pdb
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\CueMonkey.exe.config
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\obj\Debug\CueMonkeyTests.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\obj\Debug\CueMonkeyTests.csproj.CoreCompileInputs.cache
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\obj\Debug\CueMonkeyTests.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkeyTests\obj\Debug\CueMonkeyTests.pdb
