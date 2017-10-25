@@ -13,3 +13,5 @@ c:\users\benjamin dow\source\repos\CueMonkey\CueMonkey\obj\Debug\CueMonkey.cspro
 c:\users\benjamin dow\source\repos\CueMonkey\CueMonkey\obj\Debug\CueMonkey.csproj.CoreCompileInputs.cache
 c:\users\benjamin dow\source\repos\CueMonkey\CueMonkey\obj\Debug\CueMonkey.exe
 c:\users\benjamin dow\source\repos\CueMonkey\CueMonkey\obj\Debug\CueMonkey.pdb
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkey\bin\Debug\NAudio.dll
+C:\Users\Benjamin Dow\source\repos\CueMonkey\CueMonkey\bin\Debug\NAudio.xml

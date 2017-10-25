@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CueMonkey"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="CueMonkey"
         Height="{Binding SystemParameters.CurrentScreenHeight}"
         Width="{Binding SystemParameters.CurrentScreenWidth}"
         MinHeight="600px"
@@ -13,7 +13,10 @@
         WindowStartupLocation="CenterScreen"
         Name="StartupWindow"
         >
+    <!-- Container For the Page-->
     <StackPanel>
+
+        <!-- Top Menu -->
         <DockPanel>
             <Menu DockPanel.Dock="Top" >
                 <MenuItem Header="_File">
@@ -25,24 +28,74 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
+        <!-- End Top Menu-->
+
+        <!--Top Cue Information Display-->
         <Border BorderThickness="3" BorderBrush="Black">
-            <Grid>
+            <!-- Grid Container For all Cue Information Elements-->
+            <Grid Height="100">
+
+                <!-- Begin Top Level Grid Definitions -->
+                <!-- Column Definitions-->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition  Width="1*"/>
-                    <ColumnDefinition  Width="4*"/>
-
+                    <ColumnDefinition  Width="4*" />
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
-                    <RowDefinition Height="1*"/>
-                </Grid.RowDefinitions>
 
-                <Button Background="Gray" Grid.Column="0" Grid.Row="0">
+                <!-- Row Definitions -->
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="10*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- End Top Level Brid Definitions-->
+
+                    <!-- Grid for ToolBar-->
+
+                    <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
+                        <!-- Column Definitions for Toolbar-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+
+                            <ColumnDefinition Width="15*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <!-- End Column Definitions for Toolbar-->
+
+
+                        <!-- Row Definitions for Toolbar-->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <!-- End Row Definitions for Toolbar-->
+
+                        <Button Grid.Column="0">Audio</Button>
+                        <Button Grid.Column="1">Play</Button>
+                        <Button Grid.Column="2">Stop</Button>
+                        <Button Grid.Column="3">Pause</Button>
+                        <Button Grid.Column="4">Group</Button>
+
+
+
+                </Grid>
+
+                    <!--End Grid for Toolbar-->
+
+                <!-- Begin Go Button-->
+                <Button Background="Gray" Grid.Column="0" Grid.Row="1">
                     <StackPanel>
                         <TextBlock Text="GO" FontSize="60"  FontWeight="Bold" />
                     </StackPanel>
                 </Button>
-                <Grid Grid.Column="1">
+                <!-- End Go Button -->
+
+                <!-- Begin Grid For Cue Information -->
+                <Grid Grid.Column="1" Grid.Row="1">
+                    <!-- Begin Grid Definitions For Cue Information -->
+                    <!-- Column Definitions-->
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
@@ -50,12 +103,16 @@
                         <ColumnDefinition Width="5*"/>
 
                     </Grid.ColumnDefinitions>
+
+                    <!-- Row Definitions -->
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*" />
 
                         <RowDefinition Height="1*" />
                     </Grid.RowDefinitions>
+                    <!-- End Grid Definitions For Cue Information-->
 
+                    <!-- Begin Text Box For "CUE" display-->
                     <TextBox Grid.Row="0" Grid.Column="0"
                          Background="Black"
                          Foreground="GreenYellow"
@@ -64,6 +121,9 @@
                          VerticalContentAlignment="Center"
                          IsReadOnly="True"
                          >Cue</TextBox>
+                    <!-- End Text Box For "CUE" display-->
+
+                    <!-- Begin Text Box For Cue # display-->
                     <TextBox Grid.Row="0" Grid.Column="1"
                          Background="Black"
                          Foreground="GreenYellow"
@@ -71,21 +131,58 @@
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
                          />
+                    <!-- End Text Box For Cue # display-->
+
+                    <!-- Begin Text Box For Cue Name display-->
                     <TextBox Grid.Row="0" Grid.Column="2"
                          Background="Black"
                          Foreground="GreenYellow"
                          FontSize="20"
                          VerticalContentAlignment="Center"
                          />
+                    <!-- End Text Box For Cue Name display-->
+
+                    <!-- Begin Text Box For Cue Notes display-->
                     <RichTextBox Grid.Row="1" Grid.ColumnSpan="3"
 
                              />
+                    <!-- End Text Box For Cue Notes display-->
+
 
                 </Grid>
+                <!-- End Grid For Cue Information -->
+
 
 
             </Grid>
+            <!-- Grid Container For all Elements-->
+
         </Border>
+        <!-- Grid Container For all Cue Information Elements-->
+        
+        <!-- Main Body of Page (Contains Cues)-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".8*"/>
+                <ColumnDefinition Width=".5*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+        
+            <GridViewColumnHeader Grid.Column="0">Type</GridViewColumnHeader>
+            <GridViewColumnHeader Grid.Column="1">#</GridViewColumnHeader>
+            <GridViewColumnHeader Grid.Column="2">Name</GridViewColumnHeader>
+            <GridViewColumnHeader Grid.Column="3">Target</GridViewColumnHeader>
+
+             
+
+
+
+
+        </Grid>
+        <!-- End Main Body Of Page (Contains Cues) -->
     </StackPanel>
+    <!-- End Container For the Page-->
 
 </Window>
