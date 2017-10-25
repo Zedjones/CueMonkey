@@ -25,37 +25,38 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition  Width="1*"/>
-                <ColumnDefinition  Width="4*"/>
-
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-
-            <Button Background="Gray" Grid.Column="0" Grid.Row="0">
-                <StackPanel>
-                    <TextBlock Text="GO" FontSize="60"  FontWeight="Bold" />
-                </StackPanel>
-            </Button>
-            <Grid Grid.Column="1">
+        <Border BorderThickness="3" BorderBrush="Black">
+            <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="4*"/>
 
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1*" />
-                    
-                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0"
+                <Button Background="Gray" Grid.Column="0" Grid.Row="0">
+                    <StackPanel>
+                        <TextBlock Text="GO" FontSize="60"  FontWeight="Bold" />
+                    </StackPanel>
+                </Button>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+
+                        <ColumnDefinition Width="5*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBox Grid.Row="0" Grid.Column="0"
                          Background="Black"
                          Foreground="GreenYellow"
                          FontSize="20"
@@ -63,27 +64,28 @@
                          VerticalContentAlignment="Center"
                          IsReadOnly="True"
                          >Cue</TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1"
+                    <TextBox Grid.Row="0" Grid.Column="1"
                          Background="Black"
                          Foreground="GreenYellow"
                          FontSize="20"
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
                          />
-                <TextBox Grid.Row="0" Grid.Column="2"
+                    <TextBox Grid.Row="0" Grid.Column="2"
                          Background="Black"
                          Foreground="GreenYellow"
                          FontSize="20"
                          VerticalContentAlignment="Center"
                          />
-                <RichTextBox Grid.Row="1" Grid.ColumnSpan="3"
+                    <RichTextBox Grid.Row="1" Grid.ColumnSpan="3"
 
                              />
 
+                </Grid>
+
+
             </Grid>
-            
-            
-        </Grid>
+        </Border>
     </StackPanel>
 
 </Window>
