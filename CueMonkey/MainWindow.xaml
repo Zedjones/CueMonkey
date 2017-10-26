@@ -161,26 +161,9 @@
         <!-- Grid Container For all Cue Information Elements-->
         
         <!-- Main Body of Page (Contains Cues)-->
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width=".8*"/>
-                <ColumnDefinition Width=".5*"/>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="1*"/>
+        <ListView x:Name="CueView">
 
-            </Grid.ColumnDefinitions>
-        
-            <GridViewColumnHeader Grid.Column="0">Type</GridViewColumnHeader>
-            <GridViewColumnHeader Grid.Column="1">#</GridViewColumnHeader>
-            <GridViewColumnHeader Grid.Column="2">Name</GridViewColumnHeader>
-            <GridViewColumnHeader Grid.Column="3">Target</GridViewColumnHeader>
-
-             
-
-
-
-
-        </Grid>
+        </ListView>
         <!-- End Main Body Of Page (Contains Cues) -->
     </StackPanel>
     <!-- End Container For the Page-->

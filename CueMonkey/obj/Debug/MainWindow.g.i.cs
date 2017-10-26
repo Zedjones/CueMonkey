@@ -86,6 +86,7 @@ namespace CueMonkey
         }
 
         internal System.Windows.Window StartupWindow;
+        internal System.Windows.Controls.ListView CueView;
     }
 }
 
