@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CueMonkey.Models
 {
-    class StopCue : Cue
+    public class StopCue : Cue
     {
     }
 }

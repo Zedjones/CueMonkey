@@ -7,12 +7,19 @@ using System.Threading.Tasks;
 namespace CueMonkey.Models
 {
 
-    class Cue
+    public class Cue
     {
+        public enum CueTypes {
+            PLAY, STOP, PAUSE, GROUP, AUDIO
+        };
+
+
         public string Name { get; set; }
         public double Number { get; set; }
         public string Notes { get; set; }
         public Cue Target { get; set; }
+
+        public bool Selected;
 
         public Cue() {
 
@@ -29,5 +36,13 @@ namespace CueMonkey.Models
             this.Target = Target;
         }
 
+        public void Select() {
+            Selected = true;
+        }
+
+        public void Unselect()
+        {
+            Selected = false;
+        }
     }
 }

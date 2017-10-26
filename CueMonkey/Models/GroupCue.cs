@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace CueMonkey.Models
 {
-    class GroupCue : Cue
+    public class GroupCue : Cue
     {
        private ArrayList CueList;
     }

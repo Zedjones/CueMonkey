@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CueMonkey.Models
 {
 
-    class AudioCue : Cue
+    public class AudioCue : PlayCue
     {
         public string Source { get; set; }
         public TimeSpan Length { get; set; }
