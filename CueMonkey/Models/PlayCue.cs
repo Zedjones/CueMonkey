@@ -8,6 +8,12 @@ namespace CueMonkey.Models
 {
     public class PlayCue : Cue
     {
+        public PlayCue() { }
+
+        public PlayCue(CueTypes CueType) : base(CueType)
+        {
+
+        }
 
     }
 }

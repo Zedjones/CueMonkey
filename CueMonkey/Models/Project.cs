@@ -28,11 +28,14 @@ namespace CueMonkey.Models
             this.Title = Title;
             Cues = new List<Cue>();
         }
-   
+        
+
+        //Adds a cue to the list of cues
         private void AddCue(Cue cue) {
             Cues.Add(cue);
         }
-
+           
+        //Determine what the next number of a cue should be
         private double GetNextCueNumber() {
             if (!Cues.Any())
             {
@@ -45,15 +48,19 @@ namespace CueMonkey.Models
                 return Math.Floor(LastNumber) + 1;
             }
         }
-
+        
+        //Creates a new cue and stores the information
         public void CreateNewCue(Cue.CueTypes CueType, [Optional]double target, [Optional]string Source){
             Cue NewCue;
 
             
 
             if (CueType.Equals(Cue.CueTypes.PLAY)) {
-                
+                NewCue = new PlayCue(CueType);
+                NewCue.Number = GetNextCueNumber();
             }
+
+
         }
         
 
