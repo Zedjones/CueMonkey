@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using CueMonkey.Models;
 
 namespace CueMonkey
 {
@@ -13,6 +14,7 @@ namespace CueMonkey
     /// </summary>
     public partial class App : Application
     {
+        private 
         private void Application_Startup(object Sender, StartupEventArgs e) {
             MainWindow wnd = new MainWindow();
             wnd.Title = "CueMonkey";

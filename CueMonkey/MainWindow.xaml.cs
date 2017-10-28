@@ -24,6 +24,10 @@ namespace CueMonkey
         {
             InitializeComponent();
         }
- 
+
+        private void AudioBtnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
