@@ -13,5 +13,10 @@ namespace CueMonkey
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object Sender, StartupEventArgs e) {
+            MainWindow wnd = new MainWindow();
+            wnd.Title = "CueMonkey";
+            wnd.Show();
+        }
     }
 }
