@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CueMonkey.Controllers;
 
 namespace CueMonkey
 {
@@ -19,9 +20,16 @@ namespace CueMonkey
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
-        public MainWindow()
+    {   
+        ///Application Controller Passed From App.xaml.cs
+        private AppController controller;
+        
+        public MainWindow(AppController controller)
         {
+            ///Save Controller Object
+            this.controller = controller;
+
+            ///Initialize Window
             InitializeComponent();
         }
 

@@ -1,0 +1,14 @@
+*********************************
+*      .CM FILE TYPE SCHEMA     *
+*********************************
+
+
+In CueMonkey, each project can be saved as a .cm file which at its core is a XML file.
+The contents of this file document the different tags used and the meta data expected from a .cm file
+
+
+<CueMonkey>
+
+  The <CueMonkey> Tag is the parent element for the file. If it is missing from a file then the .cm file is not valid
+
+<Project_Meta_Data>

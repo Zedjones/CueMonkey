@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,14 +7,29 @@ using CueMonkey.Models;
 
 namespace CueMonkey.Controllers
 {
-    class AppController
+    public class AppController
     {
         private Project project;
 
         private CueController cueController;
 
-        public void saveProject(string Destination) {
+        /// <summary>
+        /// Constructor for new project
+        /// </summary>
+        public AppController() {
+            project = new Project();
+            cueController = new CueController(project.Cues);
         }
+
+
+        public void SaveProject(string Destination) {
+            //TODO
+        }
+
+        public void LoadProject(string Source) {
+            //TODO
+        }
+
 
     }
 }

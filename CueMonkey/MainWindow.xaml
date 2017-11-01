@@ -72,7 +72,7 @@
                         </Grid.RowDefinitions>
                         <!-- End Row Definitions for Toolbar-->
 
-                        <Button Grid.Column="0" Click="NewAudioClick">Audio</Button>
+                        <Button Grid.Column="0" Click="AudioBtnClick">Audio</Button>
                         <Button Grid.Column="1">Play</Button>
                         <Button Grid.Column="2">Stop</Button>
                         <Button Grid.Column="3">Pause</Button>
