@@ -20,7 +20,11 @@
         <DockPanel>
             <Menu DockPanel.Dock="Top" >
                 <MenuItem Header="_File">
-                    <MenuItem Header="_New" />
+                    <MenuItem Header="_New">
+                        <MenuItem Header="Project"/>
+                        <Separator/>
+                        <MenuItem Header="Cue"/>
+                    </MenuItem>
                     <MenuItem Header="_Open" />
                     <MenuItem Header="_Save" />
                     <Separator />

@@ -12,3 +12,35 @@ The contents of this file document the different tags used and the meta data exp
   The <CueMonkey> Tag is the parent element for the file. If it is missing from a file then the .cm file is not valid
 
 <Project_Meta_Data>
+  This tag is a wrapper for identifying meta data about the project
+
+  The Following are tags that can be accepted:
+
+  <Author>
+  <Title>
+
+<Cues>
+  This tag is a wrapper for the cues of the project
+
+  The Following are tags that go inside <Cues>
+
+  <Cue type="CueType">
+    This tag defines a cue. The attribute type holds a string that maps to a type of a cue
+      type can be equal to: Audio, Play, Stop, Pause, Group
+
+    <Name>
+
+    <ViewOrder>
+
+    <CueNumber>
+
+    <Notes>
+
+    <Target>
+
+    <CueList> (Specific to Group Cues)
+      Contains <Cues>
+
+    <Source> (Specific to Audio Cues)
+
+    <Length> (Specific to Audio Cues)

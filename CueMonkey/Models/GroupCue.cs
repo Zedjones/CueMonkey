@@ -10,5 +10,8 @@ namespace CueMonkey.Models
     public class GroupCue : Cue
     {
        private ArrayList CueList;
+
+        public GroupCue() : base(CueTypes.GROUP) {
+        }
     }
 }
