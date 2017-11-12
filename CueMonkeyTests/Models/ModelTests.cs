@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CueMonkey.Models.Tests
 {
     [TestClass()]
-    public class ProjectTests
+    public class ModelTests
     {
         [TestMethod()]
         public void ProjectTest()
@@ -22,5 +22,6 @@ namespace CueMonkey.Models.Tests
         {
             Assert.Fail();
         }
+
     }
 }
